@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#2C2620">
+    <title>Portfolio Tycami</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-cream-theme.css">
+    <link rel="stylesheet" href="assets/css/music-player.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body class="loading">
+    <div id="loader">
+        <div class="loader-text">
+            <span class="letter">P</span>
+            <span class="letter">O</span>
+            <span class="letter">R</span>
+            <span class="letter">T</span>
+            <span class="loader-o"></span>
+            <span class="letter">F</span>
+            <span class="letter">O</span>
+            <span class="letter">L</span>
+            <span class="letter">I</span>
+            <span class="letter">O</span>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Achievements</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#tech-stack">Platforms</a></li>
+                        <li><a href="#overview-graph">Overview Graph</a></li>
+                    </ul>
+                </li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Di section about -->
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="assets/images/profil1.jpg" alt="Ryandiq Fawwas Nafeeza" class="profile-image">
+                <div class="about-text">
+                    <p>Halo! Selamat Datang di Portofolio Tycami. Perkenalkan nama saya Ryandiq Fawwas Nafeeza, seorang
+                        siswa aktif di Kelas XII TKJ Axioo, SMK PGRI 1 Ngawi. Jurusan Teknik Komputer dan Jaringan (TKJ)
+                        telah membekali saya dengan pemahaman mendalam dan keterampilan praktis..</p>
+                    <p>Perjalanan saya di dunia teknologi dimulai sejak saya mengenal berbagai perangkat keras,
+                        perangkat lunak, dan bagaimana semuanya saling terhubung untuk menciptakan sistem yang kompleks
+                        dan fungsional. Saya selalu tertarik pada cara kerja internet, jaringan, dan bagaimana teknologi
+                        dapat memecahkan masalah di dunia nyata.</p>
+                    <p>Saya juga sangat antusias dalam dunia teknologi, khususnya di bidang Jaringan dan Perbaikan
+                        Perangkat Keras/Lunak. Pengalaman saya di Kelas Industri Axioo memberikan hands-on experience
+                        yang berharga, terutama dalam penguasaan pada Jaringan Mikrotik dan troubleshooting PC, Laptop,
+                        serta smartphone.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Di section projects -->
+        <section id="projects">
+            <h2>My Certificates</h2>
+            <div class="projects-grid">
+                <!-- First Certificate -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/mtcna-cert.jpg" alt="MTCNA Certificate">
+                        <h3>MikroTik Certified Network Associate (International Certification)</h3>
+                        <p>MTCNA certification validates foundational knowledge of MikroTik networks and RouterOS.
+                            Issued by Mikrotikls SIA, office address Ūnijas iela 2, Riga, Latvia.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">July 2025</span>
+                            <span class="cert-issuer">MikroTik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Certificate -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/second-cert.jpg" alt="Second Certificate">
+                        <h3>MikroTik Certified Network Associate</h3>
+                        <p>MTCNA certification validates foundational knowledge of MikroTik networks and RouterOS.
+                            Issued by Citraweb Solusi Teknologi - Mikrotik Certified Training Partner.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">July 2025</span>
+                            <span class="cert-issuer">Citraweb</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/ojm.jpg" alt="Second Certificate">
+                        <h3>Olimpiade Jaringan Mikrotik Nasional</h3>
+                        <p>Olimpiade Jaringan Mikrotik (OJM) adalah lomba tingkat nasional antar siswa SMK
+                            TKJ/TJKT/SIJA, yang menguji pengetahuan dan kemampuan dalam dunia jaringan.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">August 2025</span>
+                            <span class="cert-issuer">Citraweb</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- After the My Certificates section -->
+        <section id="achievements">
+            <h2>Academic Achievements</h2>
+            <div class="projects-grid">
+                <!-- Semester 1 Achievement -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/rank1.jpg" alt="Semester 1 Ranking">
+                        <h3>Peringkat 1 Kelas TKJ Axioo</h3>
+                        <p>Semester Ganjil Tahun Ajaran 2023/2024. Peringkat pertama di kelas TKJ dengan nilai rata-rata
+                            tertinggi.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">Semester 1</span>
+                            <span class="cert-issuer">SMK PGRI 1 NGAWI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 2 Achievement -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/rank2.jpg" alt="Semester 2 Ranking">
+                        <h3>Peringkat 2 Kelas TKJ Axioo</h3>
+                        <p>Semester Genap Tahun Ajaran 2023/2024. Mempertahankan posisi peringkat 3 besar dengan
+                            peningkatan nilai.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">Semester 2</span>
+                            <span class="cert-issuer">SMK PGRI 1 NGAWI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 3 Achievement -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/rank3.jpg" alt="Semester 3 Ranking">
+                        <h3>Peringkat 3 Kelas TKJ Axioo</h3>
+                        <p>Semester Ganjil Tahun Ajaran 2024/2025. Konsisten mempertahankan nilai akademik di kelas.</p>
+                        <div class="certificate-details">
+                            <span class="cert-date">Semester 3</span>
+                            <span class="cert-issuer">SMK PGRI 1 NGAWI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semester 4 Achievement -->
+                <div class="project-card">
+                    <div class="card-content">
+                        <img src="assets/images/rank4.jpg" alt="Semester 4 Ranking">
+                        <h3>Peringkat 3 Kelas TKJ Axioo</h3>
+                        <p>Semester Genap Tahun Ajaran 2024/2025. Pencapaian akhir dengan peningkatan nilai akademik.
+                        </p>
+                        <div class="certificate-details">
+                            <span class="cert-date">Semester 4</span>
+                            <span class="cert-issuer">SMK PGRI 1 NGAWI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Di section skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Mikrotik RouterOS</h3>
+                        <ul>
+                            <li>Basic Networking (IP Addressing, Subneting, CIDR)</li>
+                            <li>DHCP (DHCP Server & DHCP Client)</li>
+                            <li>Firewall (Filter Rules, NAT, Connection Tracking, Address List, Layer 7 Prototcol)</li>
+                            <li>Wireless (Wireless Mode, Security Profile, Hostpot)</li>
+                            <li>Bridging</li>
+                            <li>Routing (Static Routing & Dynamic Routing)</li>
+                            <li>VPN (PPTP, SSTP, L2TP)</li>
+                            <li>QoS (Simple Queue, Queue Type)</li>
+                            <li>Tools and Monitoring (Torch, Ping, Bandwidth Test, Traceroute)</li>
+                            <li>Troubleshooting</li>
+                        </ul>
+                    </div>
+                    <!-- Add more skill categories -->
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Software</h3>
+                        <ul>
+                            <li>Windows Operating System</li>
+                            <li>Linux Operating System</li>
+                            <li>Android Operating System</li>
+                            <li>Windows Operating System Installation</li>
+                            <li>Linux Operating System Installation</li>
+                            <li>Android Operating System Installation</li>
+                            <li>User Interface Costumization (HyperOS, AOSP, XOS, dll)</li>
+                            <li>Unlock Android System Restrictions</li>
+                            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                            <li>LightRoom, Galery editor</li>
+                            <li>Magisk, Kitsune, KernelSu</li>
+                        </ul>
+                    </div>
+                    <!-- Add more skill categories -->
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Hardware</h3>
+                        <ul>
+                            <li>Hardware Diagnosis and Repair</li>
+                            <li>PC Assembly and Disassembly</li>
+                            <li>Laptop Assembly and Disassembly</li>
+                            <li>Printer Assembly and Disassembly</li>
+                            <li>Peripheral Device Setup (Scanner, External Drive, dll)</li>
+                            <li>Hardware Upgrades (RAM, Storage, GPU, dll)</li>
+                            <li>Troubleshooting Hardware Issues</li>
+                            <li>Keyboard Costumization</li>
+                            <li>Basic Soldering Skills</li>
+                        </ul>
+                    </div>
+                    <!-- Add more skill categories -->
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Technical Stack Section -->
+        <section id="tech-stack">
+            <h2>Supported Platforms</h2>
+            <div class="tech-grid">
+                <!-- Row 1 -->
+                <div class="tech-item">
+                    <img src="assets/images/tech/huawei.png" alt="Huawei">
+                    <span>Huawei</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/mikrotik.png" alt="Mikrotik">
+                    <span>Mikrotik</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/tplink.png" alt="TP-Link">
+                    <span>TP-Link</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/cisco.png" alt="Cisco">
+                    <span>Cisco</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/zte.png" alt="ZTE">
+                    <span>ZTE</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/ubiquiti.png" alt="Ubiquiti">
+                    <span>Ubiquiti</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/karnelsu.png" alt="KarnelSU">
+                    <span>KernelSU</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/magisk.png" alt="Magisk">
+                    <span>Magisk</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/kitsune.png" alt="Kitsune">
+                    <span>Kitsune</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/scene.png" alt="Scene">
+                    <span>Scene</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/twrp.png" alt="TWRP">
+                    <span>TWRP</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/fox.png" alt="OrangeFox">
+                    <span>OrangeFox</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/xiaomi.png" alt="Xiaomi">
+                    <span>Xiaomi</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/redmi.png" alt="Redmi">
+                    <span>Redmi</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/poco.png" alt="POCO">
+                    <span>POCO</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/pixel.png" alt="PixelUI">
+                    <span>PixelUI</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/aosp.png" alt="AOSP">
+                    <span>AOSP</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/images/tech/hyper.png" alt="HyperOS">
+                    <span>HyperOS</span>
+                </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Overview Graph Section -->
+        <section id="overview-graph">
+            <h2>Overview Graph</h2>
+            <div class="graph-container">
+                <div id="graph-canvas">
+                    <!-- D3 SVG will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="section-divider"></div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Tycami Tech. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/TycamiTech" target="_blank">GitHub</a></li>
+                <li><a href="https://www.tiktok.com/@tycami_?is_from_webapp=1&sender_device=pc"
+                        target="_blank">Tiktok</a></li>
+                <li><a href="https://www.instagram.com/tycami_/">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/loading-mobile.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/section-title-animations.js"></script>
+    <script src="assets/js/tech-animations.js"></script>
+    <script src="assets/js/graph-d3.js"></script>
+    <script src="assets/js/songs-animations.js"></script>
+    <script src="assets/js/movies-animations.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/music-player.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

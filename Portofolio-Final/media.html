@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#2C2620">
+    <title>Media - Portfolio Tycami</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-cream-theme.css">
+    <link rel="stylesheet" href="assets/css/music-player.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body class="loading">
+    <div id="loader">
+        <div class="loader-text">
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+            <span class="letter">D</span>
+            <span class="letter">I</span>
+            <span class="letter">A</span>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Portfolio</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Home</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Achievements</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#tech-stack">Platforms</a></li>
+                        <li><a href="index.html#overview-graph">Overview Graph</a></li>
+                    </ul>
+                </li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Di section favorite songs -->
+        <section id="favorite-songs">
+            <h2>Favorite Songs</h2>
+            <div class="songs-grid">
+                <div class="song-card" data-audio="assets/lagu/heavenandback.m4a" data-title="Heaven And Back"
+                    data-artist="Chase Atlantic" data-cover="assets/images/heavenandback.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/heavenandback.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Heaven And Back</h4>
+                        <p class="artist-name">Chase Atlantic</p>
+                        <p class="album-name">PARADISE</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/alittledeath.mp3" data-title="A Little Death"
+                    data-artist="The Neighbourhood" data-cover="assets/images/alittledeath.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/alittledeath.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>A Little Death</h4>
+                        <p class="artist-name">The Neighbourhood</p>
+                        <p class="album-name">I Love You</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/blindinglights.mp3" data-title="Blinding Lights"
+                    data-artist="The Weeknd" data-cover="assets/images/blindinglights.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/blindinglights.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Blinding Lights</h4>
+                        <p class="artist-name">The Weeknd</p>
+                        <p class="album-name">After Hours</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/girlloudyou.mp3" data-title="Girl Loud You"
+                    data-artist="Chris Brown, Tyga" data-cover="assets/images/girloudyou.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/girloudyou.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Girl Loud You</h4>
+                        <p class="artist-name">Chris Brown, Tyga</p>
+                        <p class="album-name">Fan of a Fan</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/YAD.mp3" data-title="YAD" data-artist="Vanna Rainelle"
+                    data-cover="assets/images/yad.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/yad.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>YAD</h4>
+                        <p class="artist-name">Vanna Rainelle</p>
+                        <p class="album-name">YAD</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/softcore.mp3" data-title="Softcore"
+                    data-artist="The Neighbourhood" data-cover="assets/images/softcore.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/softcore.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Softcore</h4>
+                        <p class="artist-name">The Neighbourhood</p>
+                        <p class="album-name">The Neighbourhood</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/gataonly.mp3" data-title="Gata Only"
+                    data-artist="FloyyMenor, Cris MJ" data-cover="assets/images/gataonly.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/gataonly.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Gata Only</h4>
+                        <p class="artist-name">FloyyMenor, Cris MJ</p>
+                        <p class="album-name">El Comienzo</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/brooklynbaby.mp3" data-title="Brooklyn baby"
+                    data-artist="Lana Del Rey" data-cover="assets/images/brooklyn.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/brooklyn.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Brooklyn baby</h4>
+                        <p class="artist-name">Lana Del Rey</p>
+                        <p class="album-name">Ultraviolence</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/loveme.mp3" data-title="Love Me"
+                    data-artist="Lil Wayne, Drake, Future" data-cover="assets/images/loveme.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/loveme.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>Love Me</h4>
+                        <p class="artist-name">Lil Wayne, Drake, Future</p>
+                        <p class="album-name">I Am Not a Human Being II</p>
+                    </div>
+                </div>
+
+                <div class="song-card" data-audio="assets/lagu/aeao.mp3" data-title="AEAO"
+                    data-artist="DJ Premier, Dynamic Duo" data-cover="assets/images/aeao.jpg">
+                    <div class="song-cover" style="background-image: url('assets/images/aeao.jpg')">
+                        <div class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="song-details">
+                        <h4>AEAO</h4>
+                        <p class="artist-name">DJ Premier, Dynamic Duo</p>
+                        <p class="album-name">NBA2K16</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Di section favorite movies -->
+        <section id="favorite-movies">
+            <h2>Favorite Movies</h2>
+            <div class="movies-container">
+                <!-- Movie Card 1 -->
+                <div class="movie-card" style="background-image: url('assets/images/inception.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>Shutter Island</h3>
+                            <p class="movie-info">2010 • Mystery/Thriller</p>
+                            <p class="movie-description">dua marshal AS, Teddy Daniels dan rekannya, yang dikirim ke
+                                rumah sakit jiwa di pulau terpencil untuk menyelidiki hilangnya seorang pasien.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.2</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 2 -->
+                <div class="movie-card" style="background-image: url('assets/images/interstellar.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>Interstellar</h3>
+                            <p class="movie-info">2014 • Adventure/Sci-fi</p>
+                            <p class="movie-description">Sebuah tim penjelajah antar galaksi harus melewati lubang
+                                cacing dan terjebak di dimensi waktu ruang angkasa dalam upaya untuk menjamin
+                                kelangsungan hidup umat manusia di planet bumi.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.7</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card" style="background-image: url('assets/images/inception2.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>inception</h3>
+                            <p class="movie-info">2019 • Action/Sci-fi</p>
+                            <p class="movie-description">Dom Cobb melakukan "inception", yaitu menanamkan ide ke dalam
+                                pikiran target, bukan mencuri ide. Namun, saat menjalani misi ini, Cobb harus menghadapi
+                                proyeksi dari masa lalunya yang tragis yang bisa membahayakan timnya.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.8</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 4 -->
+                <div class="movie-card" style="background-image: url('assets/images/maverick.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>Top Gun: Maverick</h3>
+                            <p class="movie-info">2022 • Action/Adventure</p>
+                            <p class="movie-description">Pete “Maverick” Mitchell berada dalam posisi dambaannya,
+                                melakukan aksi-aksi mendobrak sebagai pilot uji nan pemberani, dan menampik setiap
+                                kesempatan naik pangkat karena akan membuatnya tak bisa menerbangkan pesawatnya.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.2</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 5 -->
+                <div class="movie-card" style="background-image: url('assets/images/deadpool.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>Deadpool</h3>
+                            <p class="movie-info">2016 • Action/Comedy</p>
+                            <p class="movie-description">Prajurit bayaran Wade Wilson, menjalani percobaan untuk
+                                menyembuhkan dirinya dari kanker. Ia memperoleh kekuatan dari proses penyembuhan itu,
+                                tapi dengan konsekuensi menjadi cacat fisik permanen.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.0</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Movie Card 6 -->
+                <div class="movie-card" style="background-image: url('assets/images/rises.jpg')">
+                    <div class="movie-overlay">
+                        <div class="movie-content">
+                            <h3>The Dark Knight Rises</h3>
+                            <p class="movie-info">2012 • Action/Heroes</p>
+                            <p class="movie-description">Delapan tahun setelah kejadian-kejadian dalam "The Dark
+                                Knight", dua ancaman baru Bane dan Catwoman, memaksa Batman untuk keluar dari
+                                persembunyiannya.</p>
+                            <div class="movie-rating">
+                                <span class="rating-number">8.4</span>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Tycami Tech. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/TycamiTech" target="_blank">GitHub</a></li>
+                <li><a href="https://www.tiktok.com/@tycami_?is_from_webapp=1&sender_device=pc"
+                        target="_blank">Tiktok</a></li>
+                <li><a href="https://www.instagram.com/tycami_/">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="assets/js/loading-mobile.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/section-title-animations.js"></script>
+    <script src="assets/js/tech-animations.js"></script>
+    <script src="assets/js/graph-d3.js"></script>
+    <script src="assets/js/songs-animations.js"></script>
+    <script src="assets/js/movies-animations.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/music-player.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
